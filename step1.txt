@@ -1,0 +1,27 @@
+loop do
+ans="y"
+puts "Enter num1"
+
+num1=gets.to_i
+
+puts"Enter num2"
+
+num2=gets.to_i
+
+puts "Enter operator"
+op=gets.chomp
+
+if(op=="+")
+prin"Result #{num1+num2}"
+elsif(op=="-")
+puts"Result #{num1-num2}"
+elsif(op=="*")
+puts "Result #{num1*num2}"
+else(op=="/")
+puts "Result #{num1/num2}"
+end
+
+puts"Do another y/n"
+ans=gets.chomp
+break if(ans=="n")
+end
